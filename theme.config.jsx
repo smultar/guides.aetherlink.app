@@ -23,6 +23,15 @@ const config = {
     defaultMenuCollapseLevel: 0
   },
 
+  useNextSeoProps() {
+    const { route } = useRouter()
+    if (route !== '/') {
+      return {
+        titleTemplate: '%s – Aether Guides'
+      }
+    }
+  },
+
   head: () => {
 
     let image = 'https://guides.aetherlink.app/images/og.png';
