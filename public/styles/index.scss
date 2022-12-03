@@ -20,6 +20,7 @@
 
 
 $background: rgba(var(--background-color));
+$background-color: black;
 $background-alt: rgba(var(--background-color-alt));
 $transparent:  var(--transparent);
 $background-blur: var(--background-blur);
@@ -31,6 +32,7 @@ $accent: var(--accent);
 $error: var(--error);
 $warn: var(--warn);
 $special: var(--special);
+
 
 html {
     transition: all 0.3s ease-in-out;
@@ -179,6 +181,121 @@ a {
         img {
             transform: scale(1.2);
             filter: drop-shadow(0px 0px 1px white);
+        }
+    }
+}
+
+.projects {
+    display: grid; flex-direction: column; width: 100%; gap: 20px; height: auto;
+    padding: 20px 0px; margin: 0px; box-sizing: border-box;
+    transition: all ease 0.3s;
+
+    .project {
+        width: 100%; height: auto; min-height: 100px;  display: flex; flex-direction: column; justify-content: center;
+        border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.40);
+        box-sizing: border-box; padding: 20px; position: relative;
+        filter: drop-shadow(0px 0px 2.5px $transparent); overflow: hidden;
+
+        .title {
+            font-size: 16px; font-weight: 500; color: $font-color;
+            margin: 0px; padding: 0px; transition: all ease 0.7s;
+
+            &.sub {
+                font-size: 14px; font-weight: 400; color: $font-color-alt;
+            }
+        }
+
+        .image {
+            height: 40px; width: 40px;
+            border-radius: 50%; object-fit: cover;
+            filter: drop-shadow(0px 0px 5px $transparent);
+
+            transition: all ease 0.3s;
+
+            &:hover {
+                filter: drop-shadow(0px 0px 5px $font-color);
+            }
+
+        }
+
+        .links {
+            display: flex; flex-direction: row; width: 100%; gap: 20px;
+            margin: 0px; padding: 0px; box-sizing: border-box; margin-top: 10px;
+
+            
+            .link {
+                display: flex; flex-direction: row; align-items: center; gap: 10px;
+                font-size: 14px; font-weight: 400; color: $font-color-alt; text-decoration: none;
+                filter: drop-shadow(0px 0px 15px $transparent);
+                
+                transition: all ease 0.3s;
+                
+                .image {
+                    height: 20px; width: 20px; object-fit: cover;
+                }
+
+                &:hover {
+                    filter: drop-shadow(0px 0px 15px $font-color);
+                    color: $font-color;
+                }
+            }
+        }
+
+        .background {
+            position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;
+            opacity: 1; z-index: -1;
+            transition: all ease 0.7s;
+
+            &::before {
+                content: ''; display: block; width: 100%;
+                position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px;
+                background: linear-gradient(90deg, $background-color, rgba($background-color, 0.35));
+                opacity: 1; z-index: 1;
+                transition: all ease 0.3s;
+            }
+
+            .background-image {
+                width: 100%; height: 100%; object-fit: cover; transform: scale(1);
+                transition: all ease 0.7s;
+            }
+        }
+
+        transition: all ease 0.7s;
+
+        &:hover { cursor: pointer;
+            border: 1px solid $font-color-alt;
+            filter: drop-shadow(0px 0px 15px rgba($color: $font-color-alt, $alpha: .40));
+
+            .title {
+                &.sub {
+                    color: $font-color;
+                }
+            }
+
+            .background {
+                opacity: 1; 
+
+                &::before {
+                    opacity: 1;
+                }
+
+                .background-image {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .more {
+        width: 100%; border-radius: 8px; padding: 10px; outline: 1px solid rgba($color: $font-color-alt, $alpha: .40);
+        display: flex; flex-direction: row; align-items: center; justify-content: center;
+        box-sizing: border-box; font-size: 14px; font-weight: 400; color: $font-color-alt;
+
+        transition: all ease 0.3s;
+
+        &:hover {
+            background-color: rgba($color: $font-color-alt, $alpha: .10);
+            color: $font-color; cursor: pointer; letter-spacing: 1px;
         }
     }
 }
