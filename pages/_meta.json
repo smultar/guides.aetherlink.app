@@ -1,15 +1,22 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "guide": "Guide",
   "about": {
     "title": "About",
     "type": "page"
   },
-  "contact": {
-    "title": "Contact ↗",
+  "glossary": {
+    "title": "Glossary",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
+    "theme": {
+      "layout": "default",
+      "typesetting": "article",
+      "sidebar": true
+    }
+
+  },
+  "-- Other --": {
+    "type": "separator",
+    "title": "Other"
   }
 }
