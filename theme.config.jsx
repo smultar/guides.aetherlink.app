@@ -44,20 +44,20 @@ const config = {
         <meta name='url' content={`https://guildes.aetherlink.app${asPath}`}/>
         <meta name='theme-color' content={'#fffff'}/>
         <meta name='title' content={frontMatter.title || 'Aether Guides'}/>
-        <meta name='description' content={'Aether Guides is a documentation website, where you can discover up-to-date guides and resources for Final Fantasy XIV'} />
+        <meta name='description' content={ frontMatter.description || 'Aether Guides is a documentation website, where you can discover up-to-date guides and resources for Final Fantasy XIV'} />
 
         {/* Meta - Open Graph */}
         <meta property='og:type' content='website' />
         <meta property='og:url' content={`https://guildes.aetherlink.app${asPath}`} />
         <meta property='og:title' content={frontMatter.title || 'Aether Guides'} />
-        <meta property='og:description' content={'Aether Guides is a documentation website, where you can discover up-to-date guides and resources for Final Fantasy XIV' } />
+        <meta property='og:description' content={ frontMatter.description || 'Aether Guides is a documentation website, where you can discover up-to-date guides and resources for Final Fantasy XIV' } />
         <meta property='og:image' content={image}/>
 
         {/* Meta - Twitter */}
         <meta name='twitter:card' content='summary_large_image' />
         <meta property='twitter:url' content={`https://guildes.aetherlink.app${asPath}`} />
         <meta property='twitter:title' content={frontMatter.title || 'Aether Guides'} />
-        <meta property='twitter:description' content={'Aether Guides is a documentation website, where you can discover up-to-date guides and resources for Final Fantasy XIV'} />
+        <meta property='twitter:description' content={ frontMatter.description || 'Aether Guides is a documentation website, where you can discover up-to-date guides and resources for Final Fantasy XIV'} />
         <meta property='twitter:image' content={image}/>
       </>
     )
