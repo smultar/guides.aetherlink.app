@@ -17,7 +17,7 @@ const config = {
     link: 'https://discord.gg/b2hTYkyVR5',
   },
 
-  docsRepositoryBase: 'https://github.com/smultar/guides.aetherlink.app',
+  docsRepositoryBase: 'https://github.com/smultar/guides.aetherlink.app/tree/main/',
 
   sidebar: {
     defaultMenuCollapseLevel: 0
