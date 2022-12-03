@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "guides.aetherlink.app",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Generalized guides for Final Fantasy XIV",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,12 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/shuding/nextra-docs-template.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Smultar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/smultar/guides.aetherlink.app/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://guides.aetherlink.app",
   "dependencies": {
     "next": "^13.0.6",
     "nextra": "2.0.0",
