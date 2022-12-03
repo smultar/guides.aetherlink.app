@@ -1,10 +1,18 @@
 {
   "index": "Introduction",
-  "guide": "Guide",
   "about": {
     "title": "About",
     "type": "page"
   },
+  
+  "-- Guides --": {
+    "type": "separator",
+    "title": "Guides"
+  },
+
+  "gameplay": "Game Play",
+  "modding": "Modding",
+
   "glossary": {
     "title": "Glossary",
     "type": "page",
