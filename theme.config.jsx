@@ -15,6 +15,10 @@ const config = {
 
   docsRepositoryBase: 'https://github.com/smultar/guides.aetherlink.app',
 
+  sidebar: {
+    defaultMenuCollapseLevel: 0
+  },
+
   footer: {
     text: <Brand/>
   },
